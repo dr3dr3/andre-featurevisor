@@ -1,0 +1,33 @@
+description: Example feature flag for dark launching incomplete ode
+tags:
+  - all
+
+bucketBy:
+  - userId
+
+environments:
+
+  sbx:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone 
+        percentage: 0
+
+  ci:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone
+        percentage: 0
+
+  stg:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for no-one 
+        percentage: 0
+
+  prd:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone
+        percentage: 0
+
