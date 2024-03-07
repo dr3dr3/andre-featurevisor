@@ -1,0 +1,21 @@
+description: Show where the site is hosted
+tags:
+  - all
+
+bucketBy:
+  - userId
+
+environments:
+
+  build:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone 
+        percentage: 100
+
+  live:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone 
+        percentage: 100
+

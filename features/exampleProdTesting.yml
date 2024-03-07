@@ -7,7 +7,7 @@ bucketBy:
 
 environments:
 
-  sbx:
+  build:
     rules:
       - key: "1"
         segments: "modeTesting" # enabled just for testing
@@ -16,7 +16,7 @@ environments:
         segments: "*" # enabled for everyone
         percentage: 0
 
-  ci:
+  live:
     rules:
       - key: "1"
         segments: "modeTesting" # enabled just for testing
@@ -25,21 +25,4 @@ environments:
         segments: "*" # enabled for everyone
         percentage: 0
 
-  stg:
-    rules:
-      - key: "1"
-        segments: "modeTesting" # enabled just for testing
-        percentage: 100
-      - key: "2"
-        segments: "*" # enabled for everyone
-        percentage: 0
-
-  prd:
-    rules:
-      - key: "1"
-        segments: "modeTesting" # enabled just for testing
-        percentage: 100
-      - key: "2"
-        segments: "*" # enabled for everyone
-        percentage: 0
 

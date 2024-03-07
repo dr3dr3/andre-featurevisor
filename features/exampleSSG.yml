@@ -7,27 +7,16 @@ bucketBy:
 
 environments:
 
-  sbx:
+  build:
     rules:
       - key: "1"
         segments: "*" # enabled for everyone 
         percentage: 100
 
-  ci:
+  live:
     rules:
       - key: "1"
         segments: "*" # enabled for everyone 
         percentage: 100
 
-  stg:
-    rules:
-      - key: "1"
-        segments: "*" # enabled for no-one 
-        percentage: 0
-
-  prd:
-    rules:
-      - key: "1"
-        segments: "*" # enabled for everyone
-        percentage: 0
 
