@@ -13,7 +13,7 @@ environments:
         segments: "*" # enabled for everyone 
         percentage: 100
 
-  live:
+  build-local:
     rules:
       - key: "1"
         segments: "*" # enabled for everyone 
