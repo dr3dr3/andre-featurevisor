@@ -2,5 +2,5 @@ feature: showLatestChange
 assertions:
   - description: "Enabled in CI environment"
     at: 40
-    environment: ci
+    environment: build
     expectedToBeEnabled: true
