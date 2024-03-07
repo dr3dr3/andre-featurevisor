@@ -1,13 +1,13 @@
 description: Example feature flag for testing in production
 tags:
-  - all
+  - live
 
 bucketBy:
   - userId
 
 environments:
 
-  live:
+  prod:
     rules:
       - key: "1"
         segments: "modeTesting" # enabled just for testing

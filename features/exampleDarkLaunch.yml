@@ -1,21 +1,16 @@
 description: Example feature flag for dark launching incomplete ode
 tags:
-  - all
+  - build
 
 bucketBy:
   - userId
 
 environments:
 
-  build:
+  prod:
     rules:
       - key: "1"
         segments: "*" # enabled for everyone 
         percentage: 100
 
-  build-local:
-    rules:
-      - key: "1"
-        segments: "*" # enabled for everyone 
-        percentage: 100
 
