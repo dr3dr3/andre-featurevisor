@@ -3,4 +3,4 @@ assertions:
   - description: "Show GitHub Profile"
     at: 40
     environment: prod
-    expectedToBeEnabled: true
+    expectedToBeEnabled: false
