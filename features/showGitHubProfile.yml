@@ -17,4 +17,4 @@ environments:
     rules:
       - key: "1"
         segments: "*" # enabled for everyone 
-        percentage: 100
+        percentage: 0
