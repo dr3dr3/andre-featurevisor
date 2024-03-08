@@ -7,6 +7,15 @@ bucketBy:
 
 environments:
 
+  dev:
+    rules:
+      - key: "1"
+        segments: "modeTesting" # enabled just for testing
+        percentage: 0
+      - key: "2"
+        segments: "*" # enabled for everyone
+        percentage: 100
+
   prod:
     rules:
       - key: "1"
@@ -15,5 +24,3 @@ environments:
       - key: "2"
         segments: "*" # enabled for everyone
         percentage: 0
-
-
